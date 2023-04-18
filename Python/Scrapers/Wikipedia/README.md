@@ -1,3 +1,3 @@
 # Wikipedia Scraper
-Um Scraper para Wikipedia feito em Python.
+Um Scraper para Wikipedia feito em Python utilizando BeautifulSoup.
 Suporta o uso de filtros para urls.

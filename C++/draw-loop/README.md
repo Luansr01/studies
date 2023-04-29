@@ -1,4 +1,4 @@
-#draw-loop
+# draw-loop
 A simple terminal draw loop made with the ncurses library.
 Draws a border with the height and width specified by the constants of the same name.
 Has a Point class for keeping track of the points drawn.

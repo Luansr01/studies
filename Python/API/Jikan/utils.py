@@ -150,7 +150,3 @@ def get_all_anime(**kwargs):
             animes.append(get_anime(page=page, num=i))
     
     return animes
-  
-x = get_all_anime(genres='horror,adventure')
-for anime in x:
-    print(anime, " | ", anime.link)

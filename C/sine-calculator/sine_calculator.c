@@ -77,7 +77,22 @@ int main(){
     }
 
     else if(strcmp(opt, "2") == 0){
-        printf("Not implemented yet.");
+        int range_1, range_2;
+        clearscr();
+        printf("? to ?\n");
+        printf("Please input the first integer of the range: ");
+        fflush(stdin);
+        fgets(opt, 100, stdin);
+        range_1 = atoi(opt);
+        clearscr();
+        printf("%i to ?\n", range_1);
+        printf("Please input the second integer of the range: ");
+        fflush(stdin);
+        fgets(opt, 100, stdin);
+        range_2 = atoi(opt);
+        clearscr();
+        printf("The sines of the range %i to %i are:\n", range_1, range_2);
+        sineInRange(range_1, range_2);
     }
 
     else{

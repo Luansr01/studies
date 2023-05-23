@@ -10,7 +10,6 @@ unsigned long long fact(int x){
     for(int i = 1; i <= x; i++){
         result = result * i;
     }
-    //printf(" | Factorial of %d is %llu |\n", x, result);
     return result;
 }
 
@@ -32,15 +31,12 @@ double sine(double x, int acc){
 
     double sineResult = sine;
 
-    //printf("\n %f", sineResult);
     for(int i = 1; i <= acc; i++){
         int t = i+(i+1);
         if(i % 2 != 0){
             sineResult = sineResult - ( (double) pow(sine, t)  / fact(t) )  ;
-            //printf("\n %lf Sub %d", sineResult, t);
         }else{
             sineResult = sineResult + ( (double) pow(sine, t)  / fact(t) ) ;
-            //printf("\n %lf Add %d", sineResult, t);
         }
     }
     return (float) sign * sineResult;
